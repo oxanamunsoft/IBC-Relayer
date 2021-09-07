@@ -86,3 +86,34 @@ This guide assumes that the Rizone server is already running on the server, the 
 ##### If the command does not work, try several times or add the - debug parameter to see the step-by-step actions of the system the output should be as follows:<br>
 
 >Generated path(transfer), run 'rly paths show transfer  -- yaml' to see details<br>
+  
+  
+  ### 12.Open and view the generated settings with the above command.<br>
+
+##### Trying to open a channel for relaying:<br>
+
+>rly tx link transfer  --debug<br>
+##### if it so happens that the channel does not open, then go to the config with the command:<br>
+
+>nano /root/.relayer/config/config.yaml<br>
+##### erase the lines in the path section on both networks:<br>
+
+>client-id: 07-tendermint-16  connection-id: connection-14  channel-id: channel-11<br>
+
+##### we re-initialize the light client with the commands:<br>
+
+>rly light init groot-011 -f<br>
+>rly light init kichain-t-4 -f<br>
+##### run the command to open the channel again<br>
+
+ 
+
+>rly tx link transfer  -- debug<br>
+##### and so on until you see the output of the command:<br>
+
+##### I[2021–09–06|09:22:54.913] ★ Channel created: [groot-011]chan{channel-11}port{transfer} -> [kichain-t-4]chan{channel-41}port{transfer}
+now when calling the command<br>
+
+>rly paths list -d<br>
+ ##### 0: transfer -> chns(✔) clnts(✔) conn(✔) chan(✔) (groot-011:transfer<>kichain-t-3:transfer)<br>
+
