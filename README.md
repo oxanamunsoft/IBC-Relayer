@@ -79,7 +79,8 @@ This guide assumes that the Rizone server is already running on the server, the 
 
 >rly light init groot-011 -f<br>
 >rly light init kichain-t-4 -f<br>
-We try to generate a channel between the networks with the command:<br>
+
+ ##### We try to generate a channel between the networks with the command:<br>
 
 >rly paths generate groot-011 kichain-t-4 transfer  -- port=transfer<br>
 ##### If the command does not work, try several times or add the - debug parameter to see the step-by-step actions of the system the output should be as follows:<br>
