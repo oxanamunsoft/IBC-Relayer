@@ -60,6 +60,7 @@ rly chains edit kichain-t-4 key kichain-RELAYER-KEY-NAME
 nano ~/.relayer/config/config.yaml
 Looking for a line
 timeout: 10s
+
 Replace with
 timeout: 30s
   
