@@ -64,4 +64,4 @@ timeout: 10s
 Replace with
 timeout: 30s
   
-  
+  «`{название-языка}<пробел>{блок кода}«`
