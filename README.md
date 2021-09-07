@@ -2,11 +2,11 @@
 
 This guide assumes that the Rizone server is already running on the server, the Kichin client is installed and there are wallets with a balance in both networks. The ep relay will be launched with the help of an official reseller from the Cosmos team.
 
-1.Download and install the relayer:
->git clone https://github.com/cosmos/relayer.git
->cd relayer
->make install
->cd
+1.Download and install the relayer: <br>
+>git clone https://github.com/cosmos/relayer.git<br>
+>cd relayer<br>
+>make install<br>
+>cd<br>
 
 2. Initialize the relayer:
 rly config init
