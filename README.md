@@ -70,3 +70,17 @@ This guide assumes that the Rizone server is already running on the server, the 
   
 >rizon tx bank send rizon-KEY-NAME rizon-RELAYER-ADDRESS 10000000uatolo<br>
 >kid tx bank send kichain-KEY-NAME kichain-RELAYER-ADDRESS 10000000utki<br>
+  
+ ### 11.  Wallets must be funded on both networks. check the availability of coins with the command:<br>
+>rly q balance groot-011<br>
+>rly q balance kichain-t-4<br>
+If there are coins on the balance and the relay shows them, then we continue, We initialize the light client in both networks with the command:<br>
+
+>rly light init groot-011 -f<br>
+>rly light init kichain-t-4 -f<br>
+We try to generate a channel between the networks with the command:<br>
+
+>rly paths generate groot-011 kichain-t-4 transfer  -- port=transfer<br>
+##### If the command does not work, try several times or add the - debug parameter to see the step-by-step actions of the system the output should be as follows:<br>
+
+>Generated path(transfer), run 'rly paths show transfer  -- yaml' to see details<br>
