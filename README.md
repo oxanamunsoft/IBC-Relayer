@@ -88,7 +88,7 @@ This guide assumes that the Rizone server is already running on the server, the 
 >Generated path(transfer), run 'rly paths show transfer  -- yaml' to see details<br>
   
   
-  ### 12.Open and view the generated settings with the above command.<br>
+  ### 12. Open and view the generated settings with the above command.<br>
 
 ##### Trying to open a channel for relaying:<br>
 
@@ -117,3 +117,16 @@ now when calling the command<br>
 >rly paths list -d<br>
  ##### 0: transfer -> chns(✔) clnts(✔) conn(✔) chan(✔) (groot-011:transfer<>kichain-t-3:transfer)<br>
 
+   ### 13. Now you can exchange in different directions:<br>
+ > rly tx transfer groot-011 kichain-t-4 1000000uatolo tki1..... --path transfer<br>
+ > rly tx transfer kichain-t-4 groot-011 1000000utki rizon....--path transfer<br>
+
+   ### 14. hash <br>
+ >   https://ki.thecodes.dev/tx/AFB775B3A8F9EA9E63FE0497B22819D176A2F20A62F61173CFA8C8469C61536E<br>
+ > hash(AFB775B3A8F9EA9E63FE0497B22819D176A2F20A62F61173CFA8C8469C61536E) <br>
+ > hash(C633D156290773727A05D248F1DD620DA5D7B9E95D52DDE0390F16C70FBCBA32) <br>
+  
+  > https://testnet.mintscan.io/rizon/txs/1CD7BAA81F29A060FD0C7D571B44BABD3AA2403751709B294F55C35D1007C8CC<br>
+   > hash(1CD7BAA81F29A060FD0C7D571B44BABD3AA2403751709B294F55C35D1007C8CC)<br>
+ >hash(A051566795286402F8E1F955B589DAC5E09C2C40C21B6B416D21D601657987C2)<br>
+ >hash(FC26738E555DFFDD33E4E3469C1E8A3F2F520F2D72C37DDDC595DAE5E2E75B58)<br>
