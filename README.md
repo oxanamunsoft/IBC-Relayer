@@ -74,7 +74,8 @@ This guide assumes that the Rizone server is already running on the server, the 
  ### 11.  Wallets must be funded on both networks. check the availability of coins with the command:<br>
 >rly q balance groot-011<br>
 >rly q balance kichain-t-4<br>
-If there are coins on the balance and the relay shows them, then we continue, We initialize the light client in both networks with the command:<br>
+
+  ##### If there are coins on the balance and the relay shows them, then we continue, We initialize the light client in both networks with the command:<br>
 
 >rly light init groot-011 -f<br>
 >rly light init kichain-t-4 -f<br>
