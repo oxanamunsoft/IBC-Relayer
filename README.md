@@ -53,7 +53,7 @@ This guide assumes that the Rizone server is already running on the server, the 
 >rly keys add kichain-t-4 name wallet<br>
 
 ### 8. Add the newly created keys to the config of the relayer:<br>
->rly chains edit groot-011 key groot-RELAYER-KEY-NAME<br>
+>rly chains edit groot-011 key rizon-RELAYER-KEY-NAME<br>
 >rly chains edit kichain-t-4 key kichain-RELAYER-KEY-NAME<br>
   ### 9. Change the waiting timeout in the relayer settings (there were no recommendations from the team on this matter, but in the previous testnet, due to the low timeout, transactions did not have time to be processed by the relayer:<br>
   
@@ -64,3 +64,9 @@ This guide assumes that the Rizone server is already running on the server, the 
 >Replace with<br>
 >timeout: 30s<br>
   
+ ### 10. Transfer to the relayer wallets 10 STARX and 10 OSMOX<br>
+  >rizon-KEY-NAME — this is the name of the key that was used to run the validator<br>
+  >kichain-KEY-NAME — the corresponding key on the Osmosis<br>
+  
+>rizon tx bank send rizon-KEY-NAME rizon-RELAYER-ADDRESS 10000000uatolo<br>
+>kid tx bank send kichain-KEY-NAME kichain-RELAYER-ADDRESS 10000000utki<br>
