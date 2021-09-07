@@ -64,7 +64,7 @@ This guide assumes that the Rizone server is already running on the server, the 
 >Replace with<br>
 >timeout: 30s<br>
   
- ### 10. Transfer to the relayer wallets 10 STARX and 10 OSMOX<br>
+ ### 10. Transfer to the relayer wallets 10 RIZON and 10 KICHAIN <br>
   >rizon-KEY-NAME — this is the name of the key that was used to run the validator<br>
   >kichain-KEY-NAME — the corresponding key on the Osmosis<br>
   
